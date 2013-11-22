@@ -15,7 +15,10 @@ import org.devgupta.eztv.parser.EzRssParser
           val node = <enclosure type="application/x-bittorrent" length="1531380321" url="http://torrent.zoink.it/Downton.Abbey.4x08.720p.HDTV.x264-FoV.[eztv].torrent"/>
 
 
+
+
           node \ "@url"
+
 
 
 

@@ -1,5 +1,10 @@
 package org.devgupta.eztv.org.devgupta.eztv.runner
 
+import org.devgupta.eztv.parser.EzRssParser._;
+
+
+
+
 /**
  * Created with IntelliJ IDEA.
  * User: mrkaiser
@@ -9,4 +14,13 @@ package org.devgupta.eztv.org.devgupta.eztv.runner
  */
 object Main {
 
+
+
+  def main(args: Array[String]) = {
+    //off of args 1
+    val list =  rssToList(args(0))
+    val unique =  uniqueList(list)
+    val top =  newestVideo(unique)
+    println(top)
+  }
 }
